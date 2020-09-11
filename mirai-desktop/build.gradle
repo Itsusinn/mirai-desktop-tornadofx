@@ -1,0 +1,34 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version "1.4.0"
+    id 'application'
+    id "com.github.johnrengelman.shadow" version "6.0.0"
+}
+group = 'org.meowcat.mirai.desktop'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+application {
+    mainClassName = "org.meowcat.mirai.desktop.MainKt"
+}
+
+dependencies {
+    testImplementation "org.jetbrains.kotlin:kotlin-test-junit"
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    implementation "no.tornado:tornadofx:$tornadofx_version"
+    implementation "net.mamoe:mirai-core-qqandroid:1.2.2"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.9"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-javafx:1.3.9'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
+compileTestKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
