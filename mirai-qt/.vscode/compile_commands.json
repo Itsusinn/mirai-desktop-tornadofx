@@ -1,0 +1,6 @@
+[
+{
+  "directory": "C:\\Code\\GitHub\\MiraiDesktop\\mirai-qt",
+  "arguments": ["C:\\APPs\\mingw64\\bin\\x86_64-w64-mingw32-gcc", "-c", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++11", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtQuick", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtQml", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-IC:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_QUICK_LIB", "-DQT_QML_LIB", "-DQT_CORE_LIB", "-fPIC", "-m64", "-o", "build\\.objs\\mirai-qt\\mingw\\x86_64\\release\\src\\main.cpp.obj", "src\\main.cpp"],
+  "file": "src\\main.cpp"
+}]
