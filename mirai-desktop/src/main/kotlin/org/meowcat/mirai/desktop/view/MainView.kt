@@ -66,6 +66,7 @@ class MainView:View(){
                 listview(groupsList) {
                     cellFormat {
                         onDoubleClick {
+                            println("${it.name} hash code: ${it.hashCode()}")
                             find<GroupChat>(mapOf(GroupChat::target to it)).openWindow()
                         }
                         graphic = cache(it.id){

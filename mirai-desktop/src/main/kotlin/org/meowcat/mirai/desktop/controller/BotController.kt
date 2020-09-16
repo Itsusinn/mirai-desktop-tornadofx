@@ -53,6 +53,7 @@ class BotController: Controller(),CoroutineScope {
         return launch {
 
             bot.groups.forEach {
+                println("${it.name} hash code: ${it.hashCode()}")
                 groupMessageListMap[it] = ArrayList<MetaMessage>().asObservable()
             }
             bot.friends.forEach {
@@ -78,6 +79,11 @@ class BotController: Controller(),CoroutineScope {
     }
 
     fun getMessageList(target: Group):ObservableList<MetaMessage>{
+        if (groupMessageListMap[target]==null){
+            println("null")
+        }else{
+            println("not null")
+        }
         return groupMessageListMap[target]!!
     }
     fun getMessageList(target: Friend):ObservableList<MetaMessage>{
