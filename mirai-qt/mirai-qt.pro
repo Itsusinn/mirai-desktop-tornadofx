@@ -17,27 +17,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    lib_json/json_reader.cpp \
-    lib_json/json_value.cpp \
-    lib_json/json_writer.cpp \
+    httpclient.cpp \
     logindlg.cpp \
     main.cpp \
     mainwindow.cpp \
     onebotclient.cpp
 
 HEADERS += \
-    json/allocator.h \
-    json/assertions.h \
-    json/config.h \
-    json/forwards.h \
-    json/json.h \
-    json/json_features.h \
-    json/reader.h \
-    json/value.h \
-    json/version.h \
-    json/writer.h \
-    lib_json/json_tool.h \
-    lib_json/json_valueiterator.inl \
+    httpclient.h \
     logindlg.h \
     mainwindow.h \
     onebotclient.h
