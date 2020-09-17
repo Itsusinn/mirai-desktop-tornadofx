@@ -26,3 +26,5 @@ mirai-desktop/build/
 mirai-desktop/.idea/
 mirai-desktop/.gradle/
 mirai-desktop/device.json
+build-mirai-qt-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/
+build-mirai-qt-Desktop_Qt_5_14_2_MinGW_32_bit-Release/
