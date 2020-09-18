@@ -1,0 +1,6 @@
+target("mirai-qt")
+    add_rules("qt.application")
+    add_files("mirai-qt/*.cpp") 
+    add_files("mirai-qt/*.ui")
+    add_files("mirai-qt/*.h")  -- add files with Q_OBJECT meta (only for qt.moc)
+    add_frameworks("QtWidgets","QtNetwork")
