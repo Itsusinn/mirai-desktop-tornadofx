@@ -11,7 +11,6 @@ int main(int argc, char *argv[])
 {
     HttpClient *client = new HttpClient();
     QJsonObject content;
-    client->sendRequest("get_login_info",QJsonDocument(content));
 
     QApplication a(argc, argv);
     MainWindow w;

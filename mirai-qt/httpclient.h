@@ -9,14 +9,13 @@ class HttpClient:public QObject
     Q_OBJECT
 public:
     HttpClient();
-
-    //用于发送请求
-    void sendRequest(QString path,QJsonDocument data);
+    QByteArray post(const QString &strUrl,
+                    const QMap<QByteArray,QByteArray> header,
+                    const QJsonDocument body);
+    QByteArray get(const QString &strUrl,
+                    const QMap<QByteArray,QByteArray> header);
 private:
     QNetworkAccessManager *manager;
-private slots:
-    void requestFinished(QNetworkReply* reply);
-
 };
 
 #endif // HTTPCLIENT_H
