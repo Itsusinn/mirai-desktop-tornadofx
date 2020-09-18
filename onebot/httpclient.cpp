@@ -40,8 +40,7 @@ QByteArray HttpClient::post(const QString &strUrl,const QMap<QString,QString> he
     //300qt错误
     if (reply->error()|| 300 == statusCode || !redirectAttr.isNull()){
         QString errString = reply->error() ? reply->errorString() : QString("发生重定向(%1)，不允许此情况").arg(statusCode);
-        qDebug()<<(nullptr, "网络异常",
-            QString("发送get请求时出现错误：\n网址：%1\n错误信息：%2").arg(reply->request().url().toDisplayString(), errString));
+        qDebug().noquote()<<"发送post请求时出现错误：\n网址：%1\n";
         replyData.clear();
     }
     reply->deleteLater();
@@ -84,12 +83,15 @@ QByteArray HttpClient::get(const QString &strUrl,const QMap<QString,QString> hea
     //300qt错误
     if (reply->error()|| 300 == statusCode || !redirectAttr.isNull()){
         QString errString = reply->error() ? reply->errorString() : QString("发生重定向(%1)，不允许此情况").arg(statusCode);
-        qDebug()<<(nullptr, "网络异常",
-            QString("发送get请求时出现错误：\n网址：%1\n错误信息：%2").arg(reply->request().url().toDisplayString(), errString));
+        qDebug().noquote()<<"发送get请求时出现错误：\n网址：%1\n";
         replyData.clear();
     }
     reply->deleteLater();
     reply = nullptr;
 
     return replyData;
+}
+
+HttpClient::~HttpClient(){
+    manager->deleteLater();
 }

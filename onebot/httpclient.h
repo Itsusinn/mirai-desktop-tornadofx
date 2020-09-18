@@ -9,6 +9,7 @@ class HttpClient:public QObject
     Q_OBJECT
 public:
     HttpClient();
+    ~HttpClient();
     QByteArray post(const QString &strUrl,
                     const QMap<QString,QString> header,
                     const QJsonDocument body);
