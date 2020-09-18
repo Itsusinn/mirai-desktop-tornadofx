@@ -1,3 +1,4 @@
+add_rules("mode.debug", "mode.release")
 target("mirai-qt")
     add_rules("qt.application")
     add_files("mirai-qt/*.cpp") 
