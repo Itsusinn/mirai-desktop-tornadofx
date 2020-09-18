@@ -1,24 +1,28 @@
 #include "mainwindow.h"
-
 #include "logindlg.h"
-#include "httpclient.h"
 
 #include <QApplication>
 #include <QtGui>
 
+#include "onebot.h"
 
 int main(int argc, char *argv[])
 {
-    HttpClient *client = new HttpClient();
+    OnebotClient *client = new OnebotClient("3025420184","WuzrSHRyB9NxO1m8");
     QJsonObject content;
 
-    QApplication a(argc, argv);
-    MainWindow w;
-        LoginDlg dlg;
-        if (dlg.exec() == QDialog::Accepted)
-        {
-           w.show();
-           return a.exec();
-        }
-    else return 0;
+
+
+
+
+
+    //图形工程
+    // QApplication a(argc, argv);
+    // MainWindow w;
+    //     LoginDlg dlg;
+    //     if (dlg.exec() == QDialog::Accepted){
+    //         w.show();
+    //         return a.exec();
+    //     }
+    // else return 0;
 }

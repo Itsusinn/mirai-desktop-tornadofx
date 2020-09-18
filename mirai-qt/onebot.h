@@ -9,12 +9,15 @@ class OnebotClient:public QObject
 {
     Q_OBJECT
 public:
-    OnebotClient();
-    OnebotClient(long account,QString token);
+    OnebotClient(QString account_,QString token_);
+
 private:
     HttpClient *httpclient;
-    long account;
+    QMap<QString,QString> headers;
+
+    QString account;
     QString token;
+
 private slots:
 
 };

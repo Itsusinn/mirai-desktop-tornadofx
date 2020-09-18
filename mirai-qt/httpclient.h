@@ -10,10 +10,10 @@ class HttpClient:public QObject
 public:
     HttpClient();
     QByteArray post(const QString &strUrl,
-                    const QMap<QByteArray,QByteArray> header,
+                    const QMap<QString,QString> header,
                     const QJsonDocument body);
     QByteArray get(const QString &strUrl,
-                    const QMap<QByteArray,QByteArray> header);
+                    const QMap<QString,QString> header);
 private:
     QNetworkAccessManager *manager;
 };
