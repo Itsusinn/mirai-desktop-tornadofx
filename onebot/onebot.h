@@ -3,16 +3,23 @@
 
 #include <QtNetwork>
 #include "httpclient.h"
+#include "data.h"
+
+namespace mirai {
+    struct LoginInfo{
+        qint64 user_id;
+        QString nickname;
+    };
+}
 
 class OnebotClient:public QObject
 {
     Q_OBJECT
 public:
-    OnebotClient(QString server,QString account_,QString token_);
-    ~OnebotClient();
+    OnebotClient(QString server,qint64 account_,QString token_);
 
     //获取登录号信息
-    QString get_login_info();
+    mirai::LoginInfo get_login_info();
 
 private:
     HttpClient *httpclient;
@@ -22,7 +29,7 @@ private:
     QString server;
 
     //bot帐号
-    QString account;
+    qint64 account;
 
     //bot的token
     QString token;

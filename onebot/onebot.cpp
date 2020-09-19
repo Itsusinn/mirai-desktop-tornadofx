@@ -1,6 +1,6 @@
 #include "onebot.h"
-
-OnebotClient::OnebotClient(QString server_,QString account_,QString token_)
+using namespace mirai;
+OnebotClient::OnebotClient(QString server_,qint64 account_,QString token_)
 {
     httpclient = new HttpClient();
     account = account_;
@@ -9,13 +9,29 @@ OnebotClient::OnebotClient(QString server_,QString account_,QString token_)
     //设置请求头
     headers.insert("Content-Type","application/json");
     headers.insert("Authorization","Bear "+token);
-    headers.insert("X-Self-ID",account);
+    headers.insert("X-Self-ID",QString::number(account));
 }
 
-QString OnebotClient::get_login_info(){
+mirai::LoginInfo OnebotClient::get_login_info(){
     QJsonObject body;
-    return httpclient->post(server+"get_login_info",headers,QJsonDocument(body));
-}
-OnebotClient::~OnebotClient(){
-    httpclient->deleteLater();
+    QByteArray rawResult = httpclient->post(server+"get_login_info",headers,QJsonDocument(body));
+
+    QJsonObject jsonResult = QJsonDocument::fromJson(rawResult).object();
+
+    QString status = jsonResult.value("ststus").toString();
+    if (status == "ok")
+    {
+        qDebug()<<"OnebotAPI操作成功";
+    }else if (status == "async")
+    {
+        qDebug()<<"async";
+        /* code */
+    }else if (status == "failed")
+    {
+        throw "failed";
+    }
+    mirai::LoginInfo loginInfo;
+    loginInfo.user_id = jsonResult.value("user_id").toString().toLongLong();
+    loginInfo.nickname = jsonResult.value("user_id").toString();
+    return loginInfo;
 }

@@ -67,3 +67,9 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+onebot/.qmake.stash
+onebot/debug/moc_httpclient.cpp
+onebot/debug/moc_onebot.cpp
+onebot/debug/moc_predefs.h
+onebot/Makefile.Debug
+onebot/Makefile.Release

@@ -30,17 +30,33 @@ QByteArray HttpClient::post(const QString &strUrl,const QMap<QString,QString> he
 
     //创建loop转化为同步
     QEventLoop eventLoop;
-    connect(reply, &QNetworkReply::finished, &eventLoop, &QEventLoop::quit);
-    eventLoop.exec(QEventLoop::ExcludeUserInputEvents);
+    QTimer timer;
 
+    connect(reply, &QNetworkReply::finished, &eventLoop, &QEventLoop::quit);
+    connect(&timer,SIGNAL(timeout()),&eventLoop,SLOT(quit()));
+    timer.start(1000);
+    eventLoop.exec();
+
+     //请求的结果
     QByteArray replyData = reply->readAll();
-    //TODO 对接onbot错误码
+    //状态码
     int statusCode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-    QVariant redirectAttr = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
-    //300qt错误
-    if (reply->error()|| 300 == statusCode || !redirectAttr.isNull()){
-        QString errString = reply->error() ? reply->errorString() : QString("发生重定向(%1)，不允许此情况").arg(statusCode);
-        qDebug().noquote()<<"发送post请求时出现错误：\n网址：%1\n";
+    //异常chu'li
+    if(statusCode != 200){
+        switch (statusCode) {
+        case 401:throw (HttpException("401:access token 未提供"));
+        case 403:throw (HttpException("403:access token 不符合"));
+        case 406:throw (HttpException("406:POST 请求的 Content-Type 不支持"));
+        case 400:throw (HttpException("400:POST 请求的正文格式不正确"));
+        case 404:throw (HttpException("404:API 不存在"));
+        }
+    }
+
+    if (timer.isActive()){
+        timer.stop();
+    } else {
+        reply->abort();
+        qDebug().noquote()<<"发送get请求超时";
         replyData.clear();
     }
     reply->deleteLater();
@@ -73,25 +89,37 @@ QByteArray HttpClient::get(const QString &strUrl,const QMap<QString,QString> hea
 
     //创建loop转化为同步
     QEventLoop eventLoop;
-    connect(reply, &QNetworkReply::finished, &eventLoop, &QEventLoop::quit);
-    eventLoop.exec(QEventLoop::ExcludeUserInputEvents);
+    QTimer timer;
 
+    connect(reply, &QNetworkReply::finished, &eventLoop, &QEventLoop::quit);
+    connect(&timer,SIGNAL(timeout()),&eventLoop,SLOT(quit()));
+    timer.start(1000);
+    eventLoop.exec();
+    //请求的结果
     QByteArray replyData = reply->readAll();
-    //TODO 对接onbot错误码
+    //状态码
     int statusCode = reply->attribute(QNetworkRequest::HttpStatusCodeAttribute).toInt();
-    QVariant redirectAttr = reply->attribute(QNetworkRequest::RedirectionTargetAttribute);
-    //300qt错误
-    if (reply->error()|| 300 == statusCode || !redirectAttr.isNull()){
-        QString errString = reply->error() ? reply->errorString() : QString("发生重定向(%1)，不允许此情况").arg(statusCode);
-        qDebug().noquote()<<"发送get请求时出现错误：\n网址：%1\n";
+
+    if(statusCode != 200){
+        switch (statusCode) {
+        case 401:throw (HttpException("401:access token 未提供"));
+        case 403:throw (HttpException("403:access token 不符合"));
+        case 406:throw (HttpException("406:POST 请求的 Content-Type 不支持"));
+        case 400:throw (HttpException("400:POST 请求的正文格式不正确"));
+        case 404:throw (HttpException("404:API 不存在"));
+        }
+    }
+
+    if (timer.isActive()){
+        timer.stop();
+    } else {
+        reply->abort();
+        qDebug().noquote()<<"发送get请求超时";
         replyData.clear();
     }
+
     reply->deleteLater();
     reply = nullptr;
 
     return replyData;
-}
-
-HttpClient::~HttpClient(){
-    manager->deleteLater();
 }
