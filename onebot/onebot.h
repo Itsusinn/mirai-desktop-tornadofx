@@ -5,13 +5,6 @@
 #include "httpclient.h"
 #include "data.h"
 
-namespace mirai {
-    struct LoginInfo{
-        qint64 user_id;
-        QString nickname;
-    };
-}
-
 class OnebotClient:public QObject
 {
     Q_OBJECT

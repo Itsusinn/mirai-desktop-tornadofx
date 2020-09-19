@@ -1,5 +1,6 @@
 QT       -=gui
 QT       += network
+QT       += websockets
 
 CONFIG += c++11 console
 
@@ -14,12 +15,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-SOURCES += $$files("*.cpp", true) \
-    httpexception.cpp
+SOURCES += $$files("*.cpp", true)
 SOURCES -= $$files("moc_*.cpp", true)
 
-HEADERS += $$files("*.h", true) \
-    httpexception.h
+HEADERS += $$files("*.h", true)
 HEADERS -= $$files("ui_*.h", true)
 HEADERS -= $$files("moc_*.h", true)
 

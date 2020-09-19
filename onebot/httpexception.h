@@ -2,9 +2,9 @@
 #define HTTPEXCEPTION_H
 
 #include <QtNetwork>
-class HttpException:QException
+class HttpException
 {
-    Q_OBJECT
+//    Q_OBJECT
 public:
     HttpException(QString errmsg_);
     //错误信息
