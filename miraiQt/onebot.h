@@ -3,7 +3,14 @@
 
 #include <QtNetwork>
 #include "httpclient.h"
-#include "data.h"
+namespace mirai {
+
+struct LoginInfo
+{
+    QString nickname;
+    QString user_id;
+};
+}
 
 class OnebotClient:public QObject
 {

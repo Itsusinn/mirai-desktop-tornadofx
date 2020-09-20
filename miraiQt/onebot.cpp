@@ -15,7 +15,6 @@ OnebotClient::OnebotClient(QString server_,qint64 account_,QString token_)
 mirai::LoginInfo OnebotClient::get_login_info(){
     QJsonObject body;
     QByteArray rawResult = httpclient->post(server+"get_login_info",headers,QJsonDocument(body));
-    qDebug()<<rawResult;
 
     QJsonObject jsonResult = QJsonDocument::fromJson(rawResult).object();
 
@@ -31,9 +30,10 @@ mirai::LoginInfo OnebotClient::get_login_info(){
     {
         throw "failed";
     }
+
     mirai::LoginInfo loginInfo;
     QJsonObject data = jsonResult.value("data").toObject();
-    loginInfo.user_id = data.value("user_id").toString().toLongLong();
-    loginInfo.nickname = data.value("user_id").toString();
+    loginInfo.user_id = data.value("user_id").toVariant().toLongLong();
+    loginInfo.nickname = data.value("nickname").toString();
     return loginInfo;
 }

@@ -52,3 +52,8 @@ compile_commands.json
 *creator.user*
 
 *_qmlcache.qrc
+
+build-miraiQt-Desktop_Qt_5_14_2_MinGW_64_bit-Debug/
+build-miraiQt-Desktop_Qt_5_14_2_MinGW_64_bit-Release/
+build-miraiQt-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/
+build-miraiQt-Desktop_Qt_5_14_2_MinGW_32_bit-Release/

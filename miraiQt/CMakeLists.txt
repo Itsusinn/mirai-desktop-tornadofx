@@ -5,9 +5,7 @@ project(miraiQt LANGUAGES CXX)
 #通过环境变量设置qt库
 #QtDefault32 32位
 #QtDefault64 64位
-set(CMAKE_PREFIX_PATH $ENV{QtDefault32})
-
-
+#set(CMAKE_PREFIX_PATH $ENV{QtDefault64})
 
 #打开相关自动选项
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
@@ -40,12 +38,12 @@ set(TS_FILES
 )
 
 set(HEADERS
-    data.h
     mainwindow.h
     logindlg.h
     httpclient.h
     onebot.h
     websocketclient.h
+    httpexception.h
 )
 
 set(SOURCES
@@ -55,6 +53,7 @@ set(SOURCES
     httpclient.cpp
     onebot.cpp
     websocketclient.cpp
+    httpexception.cpp
     )
 
 set(FORMS
@@ -62,10 +61,13 @@ set(FORMS
     logindlg.ui
 
 )
-
+INCLUDE_DIRECTORIES(
+${CMAKE_CURRENT_BINARY_DIR}/)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} ${FORMS})
 
 target_link_libraries(${PROJECT_NAME} Qt5::Widgets Qt5::Network Qt5::WebSockets)
+
+qt5_use_modules(${PROJECT_NAME} Core Widgets Network WebSockets)
 
 qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

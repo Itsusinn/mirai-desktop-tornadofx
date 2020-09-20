@@ -1,0 +1,336 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+cl: 命令行 error D8003 :缺少源文件名
+Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+cl: 命令行 error D8003 :缺少源文件名
+Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple LLVM version)":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+cl: 命令行 error D8003 :缺少源文件名
+Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+cl: 命令行 error D8003 :缺少源文件名
+Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 error D8004 :“/V”需要参数
+Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“--version”
+cl: 命令行 error D8003 :缺少源文件名
+Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 error D8004 :“/V”需要参数
+Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+cl: 命令行 warning D9002 :忽略未知选项“-qversion”
+cl: 命令行 error D8003 :缺少源文件名
+Determining if the function asprintf exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b8966.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=asprintf /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b8966.dir\Debug\\" /Fd"cmTC_b8966.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 asprintf，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_b8966.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_b8966.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_b8966.vcxproj]
+
+
+
+Determining if the function reallocarray exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6a3aa.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=reallocarray /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a3aa.dir\Debug\\" /Fd"cmTC_6a3aa.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 reallocarray，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6a3aa.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_6a3aa.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6a3aa.vcxproj]
+
+
+
+Determining if the function strcasecmp exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_5b7cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strcasecmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_5b7cf.dir\Debug\\" /Fd"cmTC_5b7cf.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 strcasecmp，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_5b7cf.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_5b7cf.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_5b7cf.vcxproj]
+
+
+
+Determining if the function strlcat exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_b32a0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcat /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_b32a0.dir\Debug\\" /Fd"cmTC_b32a0.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 strlcat，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_b32a0.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_b32a0.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_b32a0.vcxproj]
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7e14c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strlcpy /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_7e14c.dir\Debug\\" /Fd"cmTC_7e14c.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 strlcpy，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_7e14c.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_7e14c.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_7e14c.vcxproj]
+
+
+
+Determining if the function strndup exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6a5d3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strndup /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6a5d3.dir\Debug\\" /Fd"cmTC_6a5d3.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 strndup，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6a5d3.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_6a5d3.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6a5d3.vcxproj]
+
+
+
+Determining if the function strsep exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_8cf42.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=strsep /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_8cf42.dir\Debug\\" /Fd"cmTC_8cf42.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 strsep，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_8cf42.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_8cf42.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_8cf42.vcxproj]
+
+
+
+Determining if the function timegm exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_20f2d.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=timegm /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_20f2d.dir\Debug\\" /Fd"cmTC_20f2d.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 timegm，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_20f2d.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_20f2d.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_20f2d.vcxproj]
+
+
+
+Determining if the function arc4random_buf exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_ca5ff.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=arc4random_buf /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ca5ff.dir\Debug\\" /Fd"cmTC_ca5ff.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 arc4random_buf，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_ca5ff.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_ca5ff.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_ca5ff.vcxproj]
+
+
+
+Determining if the function arc4random_uniform exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6aef8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=arc4random_uniform /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6aef8.dir\Debug\\" /Fd"cmTC_6aef8.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 arc4random_uniform，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6aef8.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_6aef8.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6aef8.vcxproj]
+
+
+
+Determining if the function explicit_bzero exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_75788.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=explicit_bzero /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_75788.dir\Debug\\" /Fd"cmTC_75788.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 explicit_bzero，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_75788.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_75788.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_75788.vcxproj]
+
+
+
+Determining if the function getauxval exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_667cf.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=getauxval /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_667cf.dir\Debug\\" /Fd"cmTC_667cf.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 getauxval，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_667cf.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_667cf.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_667cf.vcxproj]
+
+
+
+Determining if the function getentropy exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_ffad5.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=getentropy /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ffad5.dir\Debug\\" /Fd"cmTC_ffad5.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 getentropy，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_ffad5.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_ffad5.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_ffad5.vcxproj]
+
+
+
+Determining if the function getpagesize exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_acd2e.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=getpagesize /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_acd2e.dir\Debug\\" /Fd"cmTC_acd2e.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 getpagesize，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_acd2e.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_acd2e.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_acd2e.vcxproj]
+
+
+
+Determining if the function timingsafe_bcmp exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_eee8a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=timingsafe_bcmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_eee8a.dir\Debug\\" /Fd"cmTC_eee8a.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 timingsafe_bcmp，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_eee8a.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_eee8a.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_eee8a.vcxproj]
+
+
+
+Determining if the function timingsafe_memcmp exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_6b0eb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=timingsafe_memcmp /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_6b0eb.dir\Debug\\" /Fd"cmTC_6b0eb.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 timingsafe_memcmp，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6b0eb.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_6b0eb.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_6b0eb.vcxproj]
+
+
+
+Determining if the function memmem exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d19a7.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  CheckFunctionExists.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=memmem /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_d19a7.dir\Debug\\" /Fd"cmTC_d19a7.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 memmem，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_d19a7.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_d19a7.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_d19a7.vcxproj]
+
+
+
+Determining if files err.h exist failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_f9867.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  HAVE_ERR_H.c
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_f9867.dir\Debug\\" /Fd"cmTC_f9867.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CheckIncludeFiles\HAVE_ERR_H.c(2,10): fatal error C1083: 无法打开包括文件: “err.h”: No such file or directory [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_f9867.vcxproj]
+
+
+Source:
+/* */
+#include <err.h>
+
+
+int main(void){return 0;}
+
+Determining if the function clock_gettime exists failed with the following output:
+Change Dir: C:/Code/GitHub/MiraiDesktop/miraiQt/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_97fc2.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && 用于 .NET Framework 的 Microsoft (R) 生成引擎版本 16.7.0+b89cb5fde
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+  用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.27.29111 版
+  版权所有(C) Microsoft Corporation。保留所有权利。
+  CheckFunctionExists.c
+  cl /c /Zi /W4 /WX- /diagnostics:column /MP /Od /Ob0 /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=clock_gettime /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_97fc2.dir\Debug\\" /Fd"cmTC_97fc2.dir\Debug\vc142.pdb" /Gd /TC /wd4018 /wd4057 /wd4100 /wd4127 /wd4146 /wd4244 /wd4245 /wd4267 /wd4389 /wd4706 /wd4996 /errorReport:queue "C:\Program Files\CMake\share\cmake-3.18\Modules\CheckFunctionExists.c"
+CheckFunctionExists.obj : error LNK2019: 无法解析的外部符号 clock_gettime，函数 main 中引用了该符号 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_97fc2.vcxproj]
+C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\Debug\cmTC_97fc2.exe : fatal error LNK1120: 1 个无法解析的外部命令 [C:\Code\GitHub\MiraiDesktop\miraiQt\build\CMakeFiles\CMakeTmp\cmTC_97fc2.vcxproj]
+
+
+
