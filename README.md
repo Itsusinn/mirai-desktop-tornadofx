@@ -3,13 +3,15 @@ Based on mirai
 
 It is a desktop program. Like re-make a qq-desktop client
 
+This branch is coded by qt
+
 ### Features supported now
 
-| 主要功能           |      |
-| :----------------- | :--: |
-| 登录               |      |
-| 加载好友和群聊列表 |      |
-| 群聊对话框         |      |
+| None |      |
+| :--- | :--: |
+|      |      |
+|      |      |
+|      |      |
 
 
 
