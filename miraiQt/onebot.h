@@ -11,8 +11,7 @@ struct LoginInfo
 {
     QString nickname;
     QString user_id;
-    QBlockingQueue<Event> eventList;
-    QBlockingQueue<QByteArray> metaList;
+
 };
 }
 
@@ -28,6 +27,8 @@ public:
 private:
     HttpClient *httpclient;
     QMap<QString,QString> headers;
+    QBlockingQueue<Event> eventList;
+    QBlockingQueue<QByteArray> metaList;
 
     //onebot服务器地址 注意结尾有/
     QString server;

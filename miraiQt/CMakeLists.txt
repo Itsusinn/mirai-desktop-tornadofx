@@ -46,8 +46,11 @@ set(HEADERS
     httpexception.h
     event.h
     QBlockingQueue.h
-    eventconverter.h
     bytearrayconverter.h
+    noticeevent.h
+    messageevent.h
+    requestevent.h
+    metaevent.h
 )
 
 set(SOURCES
@@ -60,8 +63,11 @@ set(SOURCES
     httpexception.cpp
     event.cpp
     QBlockingQueue.cpp
-    eventconverter.cpp
     bytearrayconverter.cpp
+    noticeevent.cpp
+    messageevent.cpp
+    requestevent.cpp
+    metaevent.cpp
     )
 
 set(FORMS
