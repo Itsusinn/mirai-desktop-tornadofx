@@ -44,6 +44,10 @@ set(HEADERS
     onebot.h
     websocketclient.h
     httpexception.h
+    event.h
+    QBlockingQueue.h
+    eventconverter.h
+    bytearrayconverter.h
 )
 
 set(SOURCES
@@ -54,6 +58,10 @@ set(SOURCES
     onebot.cpp
     websocketclient.cpp
     httpexception.cpp
+    event.cpp
+    QBlockingQueue.cpp
+    eventconverter.cpp
+    bytearrayconverter.cpp
     )
 
 set(FORMS

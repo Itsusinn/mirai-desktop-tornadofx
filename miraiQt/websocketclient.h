@@ -3,6 +3,7 @@
 
 #include <QtNetwork>
 #include <QWebSocket>
+#include "QBlockingQueue.h"
 
 class WebsocketClient : public QObject
 {
@@ -11,6 +12,7 @@ public:
     explicit WebsocketClient(QObject *parent = nullptr);
 private:
     QWebSocket  *websocket;
+    QBlockingQueue<QByteArray> *metaList;
 
 signals:
 private slots:
@@ -19,6 +21,8 @@ private slots:
 
     //连接成功后执行方法
     void onConnected();
+
+    void sendBinaryMessage(QByteArray message);
 
     //收到数据后执行方法（此处为收到二进制数据方法）
     void onBinaryMessageReceived(QByteArray message);

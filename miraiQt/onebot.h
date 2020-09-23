@@ -3,12 +3,16 @@
 
 #include <QtNetwork>
 #include "httpclient.h"
+#include "event.h"
+#include "QBlockingQueue.h"
 namespace mirai {
 
 struct LoginInfo
 {
     QString nickname;
     QString user_id;
+    QBlockingQueue<Event> eventList;
+    QBlockingQueue<QByteArray> metaList;
 };
 }
 
