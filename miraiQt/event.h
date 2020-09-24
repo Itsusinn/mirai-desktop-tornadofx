@@ -3,47 +3,43 @@
 
 #include <QObject>
 
-class Event : public QObject
+class Event
 {
-    Q_OBJECT
 public:
     Event();
-    virtual QJsonDocument toJson() = 0;
+//    virtual QJsonDocument toJson() = 0;
     QString time;
     QString self_id;
     QString post_type;
-
 signals:
 
 };
-
+//消息事件
 class MessageEvent : public Event
 {
-    Q_OBJECT
 public:
-    MessageEvent();
     QString message_type;
     QString sub_type;
+    QString message_id;
+    QString user_id;
+    QString message;
+    QString raw_message;
+    QString font;
+    QString sender;
 };
-
+//提醒事件
 class NoticeEvent : public Event
 {
-    Q_OBJECT
 public:
-    NoticeEvent();
 
 };
-
+//请求事件
 class RequestEvent : public Event{
-    Q_OBJECT
 public:
-    RequestEvent();
 };
-
+//元事件
 class MetaEvent : public Event{
-    Q_OBJECT
 public:
-    MetaEvent();
 };
 
 

@@ -4,48 +4,86 @@
 //私聊事件
 class PrivateMessageEvent : public MessageEvent
 {
-    Q_OBJECT
 public:
     PrivateMessageEvent();
 };
 
 //好友私聊事件
 class FriendMessageEvent : public PrivateMessageEvent{
-    Q_OBJECT
 public:
-    FriendMessageEvent();
+    FriendMessageEvent(QString time,
+                       QString self_id,
+                       QString message_id,
+                       QString user_id,
+                       QString message,
+                       QString raw_message,
+                       QString font,
+                       QString sender);
 };
 
 //群临时会话
 class TempMessageEvent : public PrivateMessageEvent{
-    Q_OBJECT
 public:
-    TempMessageEvent();
+    TempMessageEvent(QString time,
+                     QString self_id,
+                     QString message_id,
+                     QString user_id,
+                     QString message,
+                     QString raw_message,
+                     QString font,
+                     QString sender);
 };
+
+
 
 //群聊事件
 class GroupMessageEvent : public MessageEvent{
-    Q_OBJECT
 public:
     GroupMessageEvent();
+    QString group_id;
+    QString anonymous;
 };
 //正常群消息
 class NormalGroupMessageEvent : public GroupMessageEvent{
-    Q_OBJECT
 public:
-    NormalGroupMessageEvent();
+    NormalGroupMessageEvent(QString time,
+                            QString self_id,
+                            QString message_id,
+                            QString group_id,
+                            QString user_id,
+                            QString anonymous,
+                            QString message,
+                            QString raw_message,
+                            QString font,
+                            QString sender);
 };
 //匿名消息
 class AnonymousGroupMessageEvent : public GroupMessageEvent{
-    Q_OBJECT
 public:
-    AnonymousGroupMessageEvent();
+    AnonymousGroupMessageEvent(QString time,
+                               QString self_id,
+                               QString message_id,
+                               QString group_id,
+                               QString user_id,
+                               QString anonymous,
+                               QString message,
+                               QString raw_message,
+                               QString font,
+                               QString sender);
 };
 //群内系统提示
 class NoticeGroupMessageEvent : public GroupMessageEvent{
-    Q_OBJECT
 public:
-    NoticeGroupMessageEvent();
+    NoticeGroupMessageEvent(QString time,
+                            QString self_id,
+                            QString message_id,
+                            QString group_id,
+                            QString user_id,
+                            QString anonymous,
+                            QString message,
+                            QString raw_message,
+                            QString font,
+                            QString sender);
 };
 
 #endif // MESSAGEEVENT_H
